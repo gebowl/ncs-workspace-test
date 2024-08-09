@@ -3,6 +3,10 @@ name: Build and test app in NCS docker container
 on:
   pull_request:
 
+  push:
+    branches:
+      - main
+
 jobs:
   build-and-test-in-docker:
     runs-on: ubuntu-22.04
